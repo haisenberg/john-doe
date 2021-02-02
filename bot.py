@@ -81,7 +81,7 @@ print(ascii_banner)
 ##############################################
 
 #############################################################################
-TOKEN = 'ODAyNjg3MzkxNDk5OTQzOTU3.YAy24w.aCp4_OIixatJaZ1nMyIDXOUsAPA' #TOKEN
+TOKEN = '' #TOKEN
 bot = commands.Bot(command_prefix ="$") #PREFIX
 bot.remove_command('help')
 client = discord.Client() 
