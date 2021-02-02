@@ -102,7 +102,6 @@ async def help(ctx):
     embed.add_field(name='***$admin***', value='Administrateur', inline=True)
     embed.add_field(name='***$mod***',value='Modération', inline=True)
     embed.add_field(name='***$tool***',value='Boite à outils', inline=True)
-    embed.add_field(name='***$ebook***', value='French Hacking Ebook PDF', inline=True)
     await ctx.send("https://64.media.tumblr.com/0870408ef69639327475f93f665ac490/5c7bd8bcc33b5478-02/s500x750/ee4ec4c470d99ab8460c749465e887e34373caae.gif")
     await ctx.send(embed=embed)
 ########################################################################################################################
@@ -148,23 +147,6 @@ async def tool(ctx):
     embed.add_field(name='***$invitation***', value='Inviter John Doe à boire un café sur votre serveur', inline=True)
 
     await ctx.send(embed=embed)
-########################################################################################################################
-@bot.command(pass_context=True)
-async def ebook(ctx):
-    embed = discord.Embed(title="", color=0x00ff00)
-    embed.set_author(name="")
-    embed.add_field(name='***$base-hacking***',value='Ebook Base-Hacking', inline=True)
-    embed.add_field(name='***$privesc***',value='Ebook Escalade de Privilèges', inline=True)
-    embed.add_field(name='***$reverse***',value='Ebook Reverse Engineering', inline=True)
-    embed.add_field(name='***$network***', value='Ebook Network', inline=True)
-    embed.add_field(name='***$cryptographie***',value='Ebook Cryptographie', inline=True)
-    embed.add_field(name='***$steganographie***',value='Ebook Steganographie', inline=True)
-    embed.add_field(name='***$exploit***',value='Ebook Exploitation', inline=True)
-    embed.add_field(name='***$forensic***',value='Ebook Forensic', inline=True)
-    embed.add_field(name='***$vulnerability***',value='Ebook Faille/Exploit', inline=True)
-
-    await ctx.send(embed=embed)
-
 ########################################################################################################################
 ########################################################################################################################   / Nouvelle Catégorie
 ########################################################################################################################
