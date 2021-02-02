@@ -1,5 +1,5 @@
 ##############################################
-# DISCORD BOT = " John Doe Hacker Bot "      #
+# DISCORD BOT = " John Doe Cyber Bot "      #
 # Développeur : https://github.com/Haisenberg#
 ##############################################
 import discord
