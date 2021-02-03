@@ -48,8 +48,6 @@ import pyfiglet
 ##############################################
 import socket
 ##############################################
-import re
-##############################################
 import sys
 ##############################################
 from requests import get
@@ -211,7 +209,7 @@ async def wikipedia(ctx, *, query: str):
         artdesc = requests.get('https://fr.wikipedia.org/api/rest_v1/page/summary/'+article).json()['extract']
         lastedited = datetime.datetime.strptime(req[list(req)[0]]['touched'], "%Y-%m-%dT%H:%M:%SZ")
         embed = discord.Embed(title='**'+article+'**', url=arturl, description=artdesc, color=0x3FCAFF)
-        embed.set_footer(text='Wiki entry last modified',
+        embed.set_footer(text='Dernière modification du wiki ',
                          icon_url='https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png')
         embed.set_author(name='Wikipedia', url='https://fr.wikipedia.org/',
                          icon_url='https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png')
